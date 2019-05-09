@@ -1,0 +1,17 @@
+{
+ "name": "kmail",
+ "version": "1.0.0",
+ "description": "",
+ "main": "index.js",
+ "scripts": {
+  "reactJS": "cd reactJS && npm start",
+  "nodeJS": "cd nodeJS && npm start",
+  "start": "concurrently - kill-others \"npm run nodeJS\" \"npm run reactJS\""
+ },
+ "keywords": [],
+ "author": "",
+ "license": "ISC",
+ "devDependencies": {
+  "concurrently": "3.5.1"
+ }
+}
